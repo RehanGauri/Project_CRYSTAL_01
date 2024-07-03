@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+          width: 100%;
+          background-color: #4CAF50;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        h4{
+            color:green;
+
+        }
+    </style>
+</head>
+<body>
+
+    
+
+    <h2 align="center">Select a Payment Option:</h2>
+
+    <h4 align="center"> Note:- In Online payment there is ₹49 Instant Discount </h4>
+
+<button onclick="redirectToPayment('online')">Online Payment</button>
+<button onclick="redirectToPayment('cash')">Cash on Delivery</button>
+
+
+
+
+
+
+<script>
+function redirectToPayment(option) {
+    if (option === 'online') {
+        // Redirect to online payment page
+        window.location.href = 'online_payment.html';
+    } else if (option === 'cash') {
+        // Handle cash on delivery option (if needed)
+        alert('We Will contact you soon.');
+    }
+}
+
+</script>
+</body>
+</html>

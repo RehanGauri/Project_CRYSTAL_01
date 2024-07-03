@@ -1,0 +1,133 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.image img {
+    height: 400px;
+    width: 400px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.button {
+    
+    display: inline-block;
+    margin-top: 20px;
+    padding: 20px 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    
+    
+}
+
+.details-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.details-desc {
+    margin-top: 10px;
+}
+
+/* Slider styles */
+.slider {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+.slide {
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Responsive styles for mobile view*/
+@media (max-width: 768px) {
+    .container {
+        /* border: 2px solid red; */
+        flex-direction: column;
+        align-items: center;
+    }
+.button{
+    margin-left: 45px;
+}
+    .image img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .details {
+        margin: 0 30px;
+    }
+
+    .slider {
+        width: 300px;
+        height: 300px;
+    }
+}
+/* For pc View */
+@media (min-width: 768px) {
+    .details {
+        margin-left: 50px;
+    }
+    .button{
+        margin-left: 120px;
+    }
+}
+
+
+.discount{
+text-align: center;
+}
+
