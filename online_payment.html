@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Payment</title>
+    <link rel="stylesheet" href="onlinepayment.css">
+    <style>
+  body{
+    text-align: center;
+  }
+        h6{
+          color: green;
+
+        }
+        .strikethrough {
+        text-decoration: line-through;
+        color: red;
+
+    }
+    p{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+    .discounted {
+        color: green;
+        font-weight: bold;
+        font-size:30px;
+    }
+    input[type=text], select {
+        text-align: center;
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+      
+    </style>
+</head>
+<body>
+    
+        <p>Best offer!! Ending Soon...Hurry Up!!<p>
+       
+         <span class="strikethrough">₹299</span> <span class="discounted"> &nbsp;₹249</span></p>
+     
+        <div class="image-container">
+    <div class="container">
+           <img src="/Project_Crystal_1/assets/qrcode249.jpg" width="310" height="390"   alt="Qr Code">
+  </div>
+  </div>
+  
+<h6>In case of technical issue you will get 100% refund</h6>
+
+<div class="copy-container">
+    <input type="text" id="copy-input" value="9022575233@ybl" readonly>
+    <button class="copy-btn" onclick="copyText()">Copy</button>
+  </div>
+
+   
+</div>
+<h7>Upi Id name : Mohammed Rehan Mohammed Ali Gauri</h7>
+<div id="noteupi">
+<a>Note..!! If you are paying using upi id payment only pay 249</a>
+</div>
+
+<script>
+    function copyText() {
+  var copyText = document.getElementById("copy-input");
+  copyText.select();
+  document.execCommand("copy");
+  alert("Copied to clipboard!");
+}
+  </script>
+</body>
+</html>
